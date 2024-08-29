@@ -11,7 +11,7 @@ public class Main {
 
     public static void main(String[] args) throws Exception {
         Main main = new Main();
-        main.setDenominator(0);
+        main.setDenominator(2);
         System.out.println("Denominator set to: " + main.denominator);
 
     }
