@@ -13,12 +13,6 @@ pipeline {
             }
         }
         
-        stage('Checkout') {
-            steps {
-                git scm
-            }
-        }
-
         stage('Validate') {
             steps {
                 script {
