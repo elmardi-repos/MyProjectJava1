@@ -12,7 +12,19 @@ pipeline {
                 git 'https://github.com/elmardi-repos/MyProjectJava1.git'
             }
         }
+        stage('Checkout') {
+            steps {
+                git scm
+            }
+        }
 
+        stage('Validate') {
+            steps {
+                script {
+                    sh 'ls -la'
+                }
+            }
+            
         stage('Build') {
             steps {
                 // Construire le projet avec Maven
