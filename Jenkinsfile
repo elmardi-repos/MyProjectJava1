@@ -12,6 +12,7 @@ pipeline {
                 git 'https://github.com/elmardi-repos/MyProjectJava1.git'
             }
         }
+        
         stage('Checkout') {
             steps {
                 git scm
@@ -24,6 +25,7 @@ pipeline {
                     sh 'ls -la'
                 }
             }
+        }
             
         stage('Build') {
             steps {
